@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Embedded Video</title>
+  <link href="https://vjs.zencdn.net/7.16.0/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/7.16.0/video.min.js"></script>
+</head>
+<body>
+  <video id="my-video" class="video-js" controls preload="auto" width="640" height="264">
+    <!-- <source src="https://drive.google.com/file/d/12K0kuUWq1CgwsyZrW_Btz9aKiJ555Azj/preview" type='video/mp4'> -->
+    <iframe src="https://drive.google.com/file/d/12K0kuUWq1CgwsyZrW_Btz9aKiJ555Azj/preview" width="640" height="480" allow="autoplay"></iframe>
+    <!-- Include additional sources if needed (e.g., for different formats) -->
+    <!-- <source src="VIDEO_URL" type='VIDEO_TYPE'> -->
+    <!-- Video.js will automatically pick the appropriate source based on browser support -->
+    <!-- https://drive.google.com/file/d/12K0kuUWq1CgwsyZrW_Btz9aKiJ555Azj/view?usp=sharing -->
+    Your browser does not support the video tag.
+  </video>
+  <script>
+    var player = videojs('my-video');
+  </script>
+</body>
+</html>
